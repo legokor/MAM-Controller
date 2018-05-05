@@ -43,8 +43,8 @@ void loop() {
 
   if (abs(old_poti - a) >= 10) {
     changed = true;
+    old_poti = a;
   }
-  old_poti = a;
 
   if(changed){
     for(int i=0;i<9;++i){
